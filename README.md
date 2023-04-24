@@ -1,7 +1,7 @@
 # m1-app-backend
 
 Projekt: Habit-Tracker Anwendung
-Teammitglied: Hai Hung Nguyen, Ha Lan Nguyen
+Teammitglied: Hai Hung Nguyen s0577612, Ha Lan Nguyen s0584521
 
 Die Anwendung erlaubt den Benutzer:
 1. Neue Gewohnheit zu etabilieren
