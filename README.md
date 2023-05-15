@@ -21,4 +21,4 @@ dorthin gespeichert werden.
 
 ### Kontakt:
 - **Hai Hung Nguyen-s0577612 vom 2. Zug, HaiHung.Nguyen@student.htw-berlin.de**
-- **Ha Lan Nguyen-s0584521 vom 1. Zug, ...**
+- **Ha Lan Nguyen-s0584521 vom 1. Zug, Ha.Nguyen@student.htw-berlin.de**
