@@ -15,7 +15,7 @@ public class HabitController {
     HabitService service;
     Logger logger = LoggerFactory.getLogger(HabitController.class);
 
-    @PostMapping("/habits")
+    @PostMapping("/add")
     public Habit createHabit(@RequestBody Habit habit) {
         return service.save(habit);
     }
