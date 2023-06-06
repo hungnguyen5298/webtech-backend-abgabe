@@ -31,4 +31,9 @@ public class HabitController {
     public List<Habit> getAllHabits() {
         return service.getAll();
     }
+
+    @DeleteMapping("/habit/{id}")
+    public void deleteHabit(@PathVariable("id") Long id) {
+        service.deleteHabitById(id);
+    }
 }

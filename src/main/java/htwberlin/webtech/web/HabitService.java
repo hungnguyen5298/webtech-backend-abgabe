@@ -25,4 +25,8 @@ public class HabitService {
         for (Habit thing : iterator)  things.add(thing);
         return things;
     }
+
+    public void deleteHabitById(Long id) {
+        repo.deleteById(id);
+    }
 }
