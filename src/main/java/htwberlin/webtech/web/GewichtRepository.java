@@ -4,4 +4,4 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface HabitRepository extends CrudRepository<Habit, Long> { }
+public interface GewichtRepository extends CrudRepository<Gewicht, Long> { }
