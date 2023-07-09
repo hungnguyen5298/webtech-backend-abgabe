@@ -21,9 +21,9 @@ public class ZielGewichtService {
 
     public List<ZielGewicht> getAll() {
         Iterable<ZielGewicht> iterator = repo.findAll();
-        List<ZielGewicht> things = new ArrayList<ZielGewicht>();
-        for (ZielGewicht thing : iterator)  things.add(thing);
-        return things;
+        List<ZielGewicht> allgewicht = new ArrayList<ZielGewicht>();
+        for (ZielGewicht gewicht : iterator)  allgewicht.add(gewicht);
+        return allgewicht;
     }
 
     public void deleteZielGewichtById(Long id) {

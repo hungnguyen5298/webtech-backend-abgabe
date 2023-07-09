@@ -10,13 +10,13 @@ public class ZielGewicht {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private int kilo;
+    private double zielKilo;
 
     public ZielGewicht() {}
 
-    public ZielGewicht(int id, int kilo) {
+    public ZielGewicht(int id, double zielKilo) {
         this.id = id;
-        this.kilo = kilo;
+        this.zielKilo = zielKilo;
     }
 
     public int getId() {
@@ -27,19 +27,19 @@ public class ZielGewicht {
         this.id = id;
     }
 
-    public int getKilo() {
-        return kilo;
+    public double getZielkilo() {
+        return zielKilo;
     }
 
-    public void setKilo(int kilo) {
-        this.kilo = kilo;
+    public void setZielKilo(double zielKilo) {
+        this.zielKilo = zielKilo;
     }
 
     @Override
     public String toString() {
         return "Zielgewicht{" +
                 "id=" + id +
-                ", kilo = " + kilo +
+                ", kilo = " + zielKilo +
                 '}';
     }
 }
