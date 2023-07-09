@@ -39,4 +39,10 @@ public class ZielGewichtController {
     public void deleteZielGewicht(@PathVariable("id") Long id) {
         service.deleteZielGewichtById(id);
     }
+
+    @CrossOrigin
+    @PutMapping("/zielgewicht/{id}")
+    public ZielGewicht updateZielGewicht(@PathVariable("id") Long id, @RequestBody ZielGewicht updatedZielGewicht) {
+        return service.updateZielGewicht(id, updatedZielGewicht);
+    }
 }

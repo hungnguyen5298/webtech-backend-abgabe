@@ -29,4 +29,12 @@ public class ZielGewichtService {
     public void deleteZielGewichtById(Long id) {
         repo.deleteById(id);
     }
+
+    public ZielGewicht updateZielGewicht(Long id, ZielGewicht updatedZielGewicht) {
+        ZielGewicht existingZielGewicht = repo.findById(id)
+                .orElseThrow(() -> new RuntimeException("ZielGewicht with ID " + id + " not found"));
+        existingZielGewicht.setZielKilo(updatedZielGewicht.getZielKilo());
+        return repo.save(existingZielGewicht);
+    }
+
 }

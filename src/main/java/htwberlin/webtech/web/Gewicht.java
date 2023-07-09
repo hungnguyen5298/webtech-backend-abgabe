@@ -9,24 +9,33 @@ public class Gewicht {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private double kilo;
     @Temporal(TemporalType.DATE)
     private Date datum;
 
     public Gewicht() {}
 
-    public Gewicht(int id, double kilo, Date datum) {
+    public Gewicht(Long id, double kilo, Date datum) {
         this.id = id;
         this.kilo = kilo;
         this.datum = datum;
     }
 
-    public int getId() {
+    public Gewicht(double kilo, Date datum) {
+        this.kilo = kilo;
+        this.datum = datum;
+    }
+
+    public Gewicht(double kilo) {
+        this.kilo = kilo;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -50,8 +59,8 @@ public class Gewicht {
     public String toString() {
         return "Gewicht{" +
                 "id=" + id +
-                ", kilo = " + kilo +
-                ", datum = " + datum +
+                ", kilo=" + kilo +
+                ", datum=" + datum +
                 '}';
     }
 }
