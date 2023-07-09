@@ -10,13 +10,13 @@ public class Gewicht {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private int kilo;
+    private double kilo;
     @Temporal(TemporalType.DATE)
     private Date datum;
 
     public Gewicht() {}
 
-    public Gewicht(int id, int kilo, Date datum) {
+    public Gewicht(int id, double kilo, Date datum) {
         this.id = id;
         this.kilo = kilo;
         this.datum = datum;
@@ -30,11 +30,11 @@ public class Gewicht {
         this.id = id;
     }
 
-    public int getKilo() {
+    public double getKilo() {
         return kilo;
     }
 
-    public void setKilo(int kilo) {
+    public void setKilo(double kilo) {
         this.kilo = kilo;
     }
 
